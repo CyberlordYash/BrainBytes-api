@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json({ extended: true }));
 app.use(express.urlencoded({ extended: true }));
 app.use(
-  cors({ credentials: true, origin: "https://brainbytes-yash.netlify.app/" })
+  cors({ credentials: true, origin: "https://brainbytes-yash.netlify.app" })
 );
 app.use(upload());
 app.use("/uploads", express.static(__dirname + "/uploads"));
